@@ -16,11 +16,10 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Fondo Tecnológico */
 .tech-bg {
   position: absolute;
   inset: 0;
-  background: url('/assets/bg-circuit.jpg') center/cover; /* Asegúrate de tener esta imagen */
+  background: url('/assets/bg-circuit.jpg') center/cover;
   opacity: 0.3;
 }
 
@@ -34,7 +33,6 @@
 .cyan { background: var(--cyan); top: -200px; left: -200px; }
 .pink { background: var(--pink); bottom: -200px; right: -200px; }
 
-/* Tarjeta de Cristal */
 .battle-glass-card {
   position: relative;
   z-index: 10;
@@ -57,7 +55,6 @@
   margin-bottom: 40px;
 }
 
-/* Jugadores */
 .players-grid {
   display: flex;
   justify-content: space-between;
@@ -87,7 +84,6 @@
 .name { font-size: 1.8rem; color: #fff; margin: 0; font-weight: 700; }
 .label, .wins { color: #94a3b8; font-size: 0.75rem; display: block; }
 
-/* VS Divider */
 .vs-divider { margin: 0 20px; }
 .vs-hexagon {
   width: 55px; height: 55px;
@@ -97,7 +93,6 @@
   color: #fff; font-weight: 900; font-size: 0.8rem;
 }
 
-/* Turno */
 .active-name {
   font-size: 4rem;
   font-weight: 900;
@@ -107,7 +102,6 @@
   letter-spacing: 2px;
 }
 
-/* Botones e Iconos PNG */
 .moves-flex {
   display: flex;
   justify-content: center;
