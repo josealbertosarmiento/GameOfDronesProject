@@ -1,0 +1,10 @@
+<app-start-game 
+  *ngIf="currentScreen === 'START'" 
+  (onStart)="goToGame($event)">
+</app-start-game>
+
+<app-game-board 
+  *ngIf="currentScreen === 'PLAYING'" 
+  [player1]="p1" 
+  [player2]="p2"> 
+</app-game-board>

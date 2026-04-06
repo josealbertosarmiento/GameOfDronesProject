@@ -1,0 +1,58 @@
+<div class="arena-main-wrapper">
+  <div class="tech-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow-orb cyan"></div>
+    <div class="glow-orb pink"></div>
+  </div>
+
+  <div class="battle-glass-card" *ngIf="p1Score < 3 && p2Score < 3">
+    <header class="arena-header">BATTLE ARENA</header>
+
+    <div class="players-grid">
+      <div class="player-container p1-theme" [class.active-glow]="currentTurn === 1">
+        <div class="player-meta">
+          <span class="label">PLAYER 1:</span>
+          <h2 class="name">{{player1}}</h2>
+          <span class="wins">Wins: {{p1Score}}</span>
+        </div>
+        <div class="score-display text-cyan">{{p1Score}}</div>
+      </div>
+
+      <div class="vs-divider">
+        <div class="vs-hexagon">
+          <span>VS</span>
+        </div>
+      </div>
+
+      <div class="player-container p2-theme" [class.active-glow]="currentTurn === 2">
+        <div class="score-display text-pink">{{p2Score}}</div>
+        <div class="player-meta text-end">
+          <span class="label">PLAYER 2:</span>
+          <h2 class="name">{{player2}}</h2>
+          <span class="wins">Wins: {{p2Score}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="turn-indicator">
+      <p>CURRENT TURN</p>
+      <h1 class="active-name">{{ (currentTurn === 1 ? player1 : player2) | uppercase }}</h1>
+    </div>
+
+    <div class="moves-flex">
+      <button *ngFor="let move of moves" class="move-btn" (click)="seleccionarMovimiento(move.name)">
+        <div class="icon-frame">
+          <img [src]="'assets/' + move.name.toLowerCase() + '.png'" [alt]="move.name">
+        </div>
+        <span class="btn-caption">{{move.name | uppercase}}</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="battle-glass-card winner-screen" *ngIf="p1Score >= 3 || p2Score >= 3">
+    <span class="material-symbols-outlined trophy-icon">workspace_premium</span>
+    <h3 class="emperor-subtitle">NUEVO EMPERADOR</h3>
+    <h1 class="emperor-name">{{ winnerName | uppercase }}</h1>
+    <button class="restart-btn" (click)="reiniciarPartida()">REINICIAR BATALLA</button>
+  </div>
+</div>

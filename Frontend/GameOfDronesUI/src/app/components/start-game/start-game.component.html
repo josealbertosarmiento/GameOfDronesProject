@@ -1,0 +1,45 @@
+<div class="arena-main-wrapper">
+  <div class="tech-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow-orb cyan"></div>
+    <div class="glow-orb pink"></div>
+  </div>
+
+  <div class="battle-glass-card setup-card">
+    <header class="arena-header">
+      <div class="status-tag">SISTEMA LISTO</div>
+      <h1 class="main-title">GAME OF DRONES</h1>
+    </header>
+
+    <div class="setup-grid">
+      <div class="player-input-box p1-theme">
+        <div class="icon-wrap">
+          <span class="material-symbols-outlined">settings_input_antenna</span>
+        </div>
+        <label class="label">PLAYER 1</label>
+        <input type="text" [(ngModel)]="player1Name" placeholder="NOMBRE PILOTO..." class="arena-input">
+      </div>
+
+      <div class="vs-divider">
+        <div class="vs-hexagon">
+          <span>VS</span>
+        </div>
+      </div>
+
+      <div class="player-input-box p2-theme">
+        <div class="icon-wrap">
+          <span class="material-symbols-outlined">settings_input_antenna</span>
+        </div>
+        <label class="label">PLAYER 2</label>
+        <input type="text" [(ngModel)]="player2Name" placeholder="NOMBRE PILOTO..." class="arena-input text-end">
+      </div>
+    </div>
+
+    <footer class="setup-footer">
+      <button class="launch-btn" (click)="iniciarBatalla()">
+        <span class="material-symbols-outlined">rocket_launch</span>
+        INICIAR BATALLA
+      </button>
+    </footer>
+  </div>
+</div>
