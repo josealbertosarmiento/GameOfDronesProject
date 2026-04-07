@@ -42,8 +42,6 @@ Para cumplir con el requisito de ejecución directa desde **Visual Studio** sin 
    ```powershell
    npm install
 3. Inicie la aplicación:
-
-Bash
     ```powershell
     npm start
 4. Acceda a http://localhost:4200.
