@@ -20,7 +20,7 @@ Esta es una solución **Full-Stack** desarrollada para la evaluación técnica d
 ---
 
 ## 🚀 Instrucciones de Ejecución Rápida
-[cite_start]Para cumplir con el requisito de ejecución directa desde **Visual Studio** sin pasos adicionales[cite: 7, 105]:
+Para cumplir con el requisito de ejecución directa desde **Visual Studio** sin pasos adicionales[cite: 7, 105]:
 
 ### 1. Requisitos Previos
 * [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
@@ -30,6 +30,21 @@ Esta es una solución **Full-Stack** desarrollada para la evaluación técnica d
 ### 2. Configuración del Backend (.NET)
 1. Abra la solución `.sln` en **Visual Studio**.
 2. Abra la **Consola del Administrador de Paquetes** (*Tools > NuGet Package Manager > Package Manager Console*).
-3. Ejecute el comando para crear la base de datos automáticamente[cite: 11]:
+3. Ejecute el comando para crear la base de datos automáticamente:
    ```powershell
    Update-Database
+4. Presione F5 para iniciar la API.
+
+### 3. Configuración del Frontend (Angular)
+
+1. Navegue a la carpeta Frontend/GameOfDronesUI.
+2. Instale las dependencias:
+   ```powershell
+   npm install
+3. Inicie la aplicación:
+
+Bash
+ ```powershell
+npm start
+
+Acceda a http://localhost:4200.
