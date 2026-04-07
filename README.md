@@ -34,6 +34,7 @@ Para cumplir con el requisito de ejecución directa desde **Visual Studio** sin 
    ```powershell
    Update-Database
 Esto creará la base de datos GameOfDronesDB definida en el appsettings.json.
+
 4. Presione F5 para iniciar la API.
 
 ### 3. Configuración del Frontend (Angular)
