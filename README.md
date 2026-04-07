@@ -7,7 +7,7 @@
 Esta es una solución **Full-Stack** desarrollada para la evaluación técnica de **Full-stack Developer** en **Alo People** El sistema implementa un simulador de combate de drones basado en reglas dinámicas, diseñado para demostrar habilidades en arquitectura, programación y análisis.
 
 ## 🌐 Demo en Vivo
-👉 **[PEGA_AQUI_TU_URL_DE_GITHUB_PAGES]**
+👉 **https://josealbertosarmiento.github.io/GameOfDronesProject/**
 
 ---
 
