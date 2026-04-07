@@ -44,7 +44,6 @@ Para cumplir con el requisito de ejecución directa desde **Visual Studio** sin 
 3. Inicie la aplicación:
 
 Bash
- ```powershell
-npm start
-
-Acceda a http://localhost:4200.
+    ```powershell
+    npm start
+4. Acceda a http://localhost:4200.
