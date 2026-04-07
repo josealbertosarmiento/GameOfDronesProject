@@ -1,2 +1,35 @@
-🛡️ Game of Drones - Battle Arena 🚀Este proyecto es una solución Full-Stack desarrollada para la evaluación técnica de Full-stack Developer en Alo People. El sistema implementa un simulador de combate de drones basado en reglas dinámicas, diseñado para demostrar habilidades en arquitectura, programación y análisis.🌐 Demo en Vivo👉 [PEGA_AQUÍ_TU_URL_DE_GITHUB_PAGES] 🛠️ Stack TecnológicoFrontend: Angular 12.2.0.Backend: .NET 6.0 Web API.Persistencia: SQL Server con Entity Framework Core.Interfaz: CSS3 (Glassmorphism) y Bootstrap 5.🚀 Instrucciones de Ejecución RápidaPara cumplir con el requisito de ejecución directa desde Visual Studio sin pasos adicionales:1. Requisitos Previos.NET 6.0 SDK.Node.js (v14 o v16 recomendado).Visual Studio 2022.2. Configuración del Backend (.NET)Abra la solución .sln en Visual Studio.Abra la Consola del Administrador de Paquetes (Tools > NuGet Package Manager > PMC).Ejecute el comando para crear la base de datos:PowerShellUpdate-Database
-Presione F5 para iniciar la API.3. Configuración del Frontend (Angular)Navegue a la carpeta Frontend/GameOfDronesUI.Instale las dependencias: npm install.Inicie la aplicación: npm start.Acceda a http://localhost:4200.🎮 Reglas de Negocio ImplementadasRegistro: El sistema solicita los nombres de exactamente 2 jugadores.Duelo por Turnos: Los jugadores eligen movimientos de forma secuencial (Piedra, Papel o Tijera).Lógica de Combate:El Papel vence a la Piedra.La Piedra vence a la Tijera.La Tijera vence al Papel.Condición de Victoria: El primer jugador en alcanzar 3 victorias gana la batalla y es nombrado EMPEROR.Reglas Dinámicas: El sistema permite cambiar o añadir movimientos y sus reglas de victoria en tiempo de ejecución (runtime).Persistencia: Se almacenan los juegos ganados por cada jugador para seguimiento histórico.🧹 Calidad de Código (Clean Code)Siguiendo las consideraciones adicionales de la evaluación:Sin Código Muerto: Se eliminó código comentado, repetido o funciones no utilizadas.Configuración Limpia: No se utilizan "Hard-coded connection strings" ni URLs estáticas.Repositorio Optimizado: Se excluyeron carpetas de paquetes (node_modules, bin, obj) mediante .gitignore.Desarrollado para Alo People Programming Assessment - 2026.
+# 🛡️ Game of Drones - Battle Arena 🚀
+
+![Angular](https://img.shields.io/badge/Angular-12.2.0-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-6.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-LocalDB-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+
+Esta es una solución **Full-Stack** desarrollada para la evaluación técnica de **Full-stack Developer** en **Alo People** El sistema implementa un simulador de combate de drones basado en reglas dinámicas, diseñado para demostrar habilidades en arquitectura, programación y análisis.
+
+## 🌐 Demo en Vivo
+👉 **[PEGA_AQUI_TU_URL_DE_GITHUB_PAGES]**
+
+---
+
+## 🛠️ Stack Tecnológico
+* **Frontend:** Angular 12.2.0.
+* **Backend:** .NET 6.0 Web API.
+* **Persistencia:** SQL Server con Entity Framework Core.
+* **Interfaz:** CSS3 (Glassmorphism) y Bootstrap 5.
+
+---
+
+## 🚀 Instrucciones de Ejecución Rápida
+[cite_start]Para cumplir con el requisito de ejecución directa desde **Visual Studio** sin pasos adicionales[cite: 7, 105]:
+
+### 1. Requisitos Previos
+* [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
+* [Node.js](https://nodejs.org/) (v14 o v16 recomendado para Angular 12).
+* Visual Studio 2022.
+
+### 2. Configuración del Backend (.NET)
+1. Abra la solución `.sln` en **Visual Studio**.
+2. Abra la **Consola del Administrador de Paquetes** (*Tools > NuGet Package Manager > Package Manager Console*).
+3. Ejecute el comando para crear la base de datos automáticamente[cite: 11]:
+   ```powershell
+   Update-Database
