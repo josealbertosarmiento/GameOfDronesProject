@@ -47,3 +47,24 @@ Esto creará la base de datos GameOfDronesDB definida en el appsettings.json.
     ```powershell
     npm start
 4. Acceda a http://localhost:4200.
+
+### Condición de Victoria
+- El primer jugador en alcanzar **3 victorias** gana la batalla y es nombrado **EMPEROR**.
+
+### Reglas Dinámicas (Runtime)
+- Se implementó la capacidad de **modificar o añadir movimientos** y sus reglas de debilidad en **tiempo de ejecución** sin reiniciar la aplicación.
+
+### Persistencia
+- Se almacenan los **juegos ganados por cada jugador** para realizar un seguimiento histórico de su desempeño.
+
+---
+
+## 🧹 Calidad de Código (Clean Code)
+
+- **Sin Código Muerto**: Se eliminó cualquier bloque de código comentado o funciones no utilizadas.
+- **Configuración Limpia**: No se utilizan *hard-coded connection strings* ni URLs estáticas.
+- **Repositorio Optimizado**: Se excluyeron las carpetas de paquetes (`node_modules`, `bin`, `obj`) mediante el uso de `.gitignore`.
+
+---
+
+Desarrollado para **Alo People Programming Assessment - 2026**
